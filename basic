@@ -1,5 +1,8 @@
 cp file1 file2    # 파일 복사
-
 cp file1 dir1/    # 파일을 디렉토리 안에 복사
-
 cp file1 file2 dir1/    # 한번에 여러개의 파일을 디렉토리에 복사
+
+tree dir    # tree 사용시 디렉토리 구조를 tree 형식으로 확인 가능
+cp -r dir/ dir2/    # 디렉토리 전체복사 옵션 -r
+
+cp -r dir1/ backup$(date '+_%Y%m%d')    # cp와 -r 옵션과 날짜를 사용해 백업본 저장 가능
