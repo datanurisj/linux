@@ -22,3 +22,7 @@ chmod 777 (4+2+1) r + e + x
 chown 
 cogrp
 
+
+# vi 확인중 페이지 이동
+gg : 상단
+shift + g : 하단
