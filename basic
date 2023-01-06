@@ -6,3 +6,19 @@ tree dir    # tree 사용시 디렉토리 구조를 tree 형식으로 확인 가
 cp -r dir/ dir2/    # 디렉토리 전체복사 옵션 -r
 
 cp -r dir1/ backup$(date '+_%Y%m%d')    # cp와 -r 옵션과 날짜를 사용해 백업본 저장 가능
+
+du -sh    # 용량 확인
+df -h     # 전체 사용량 확인
+find . -type f | wc -l    # 모든 파일의 개수 확인
+
+ps -ef | grep jar     # jar 찾기
+
+ifconfig
+top,htop
+
+
+# 리눅스 권한 변경
+chmod 777 (4+2+1) r + e + x
+chown 
+cogrp
+
