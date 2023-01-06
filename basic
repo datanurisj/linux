@@ -26,3 +26,6 @@ cogrp
 # vi 확인중 페이지 이동
 gg : 상단
 shift + g : 하단
+
+# log
+/var/log/auth.log   # 접속 기록 로그 
