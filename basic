@@ -1,0 +1,5 @@
+cp file1 file2    # 파일 복사
+
+cp file1 dir1/    # 파일을 디렉토리 안에 복사
+
+cp file1 file2 dir1/    # 한번에 여러개의 파일을 디렉토리에 복사
