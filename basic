@@ -47,3 +47,14 @@ unzip [압축한 디렉토리]
 # root 로 변환
 sudo su
 /로 이동 : cd
+
+
+# sftp
+sftp username@remotehost
+
+exit # sftp 
+
+ls: List files and directories on the remote system.
+cd: Change directory on the remote system.
+get: Download a file from the remote system to your local system.
+put: Upload a file from your local system to the remote system.
