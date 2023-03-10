@@ -49,7 +49,7 @@ sudo su
 /로 이동 : cd
 
 
-# sftp
+# sftp 접속
 sftp username@remotehost
 
 exit # sftp 
