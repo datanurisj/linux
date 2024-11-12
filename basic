@@ -64,6 +64,20 @@ sudo su
 > whoami     // 현재 나의 계정을 알 수 있음
 > exit     // 전환하기 전의 계정으로 돌아감 (logout도 마찬가지)
 
+# 모든 계정 정보 확인
+> cat /etc/passwd
+
+
+# 계정생성
+useradd [아이디]
+passwd [아이디]                  # 비밀번호 설정
+groupadd [그룹명]                # 그룹 설정
+usermod -G [그룹명] [아이디]
+groups [아이디]                  # 그룹 아이디 확인
+usermod -s /bin/bash [아이디]    # 쉘 설정
+grep /bin/bash /etc/passwd | cut -f1 -d:    # 생성 계정 확인
+
+
 
 # sftp 접속
 sftp username@remotehost
