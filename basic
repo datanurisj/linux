@@ -49,6 +49,22 @@ sudo su
 /로 이동 : cd
 
 
+# su(Switch user)
+현재 계정을 로그아웃하짖 않고 다른 계정으로 전환하는 명령어
+
+> su[계정명] : 현재 계정의 환경변수를 유지한 채 전환
+> su -[계정명] : root 계정의 환경변수까지 적용되어 전환
+
+
+# sudo (Superuser DO)
+현재 계정에서 일시적으로 root 권한이 필요할 경우에 사용하는 명령어
+
+> sudo [ 명령어 ]
+
+> whoami     // 현재 나의 계정을 알 수 있음
+> exit     // 전환하기 전의 계정으로 돌아감 (logout도 마찬가지)
+
+
 # sftp 접속
 sftp username@remotehost
 
