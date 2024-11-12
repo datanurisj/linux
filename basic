@@ -18,11 +18,13 @@ cp -r dir1/ backup$(date '+_%Y%m%d')    # cp와 -r 옵션과 날짜를 사용해
 du -sh    # 용량 확인
 df -h     # 전체 사용량 확인
 find . -type f | wc -l    # 모든 파일의 개수 확인
+fdisk -l      # 파티션 정보 확인
 
 ps -ef | grep jar     # jar 찾기
 
 ifconfig
-top,htop
+top :q 로 종료
+htop : F10으로 종료료
 
 
 # 리눅스 권한 변경
@@ -77,6 +79,19 @@ groups [아이디]                  # 그룹 아이디 확인
 usermod -s /bin/bash [아이디]    # 쉘 설정
 grep /bin/bash /etc/passwd | cut -f1 -d:    # 생성 계정 확인
 
+
+# CPU 코어수
+grep -c processor /proc/cpuinfo
+# 메모리 정보
+dmesg | grep memory
+
+
+# ps : Process Status (현재 실행중인 프로세스 목록을 보여줌)
+ps -e : 모든 프로세스를 출력해준다.
+ps -f : 풀 포맷으로 보여준다. (UID, PID 등)
+ps -l : 긴 포맷으로 보여준다.
+ps -p : 특정 PID(프로세스 ID)의 프로세스를 보여준다.
+ps -u : 특정 사용자의 프로세스를 보여준다.
 
 
 # sftp 접속
