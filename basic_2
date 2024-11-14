@@ -1,0 +1,3 @@
+# 로컬 -> linux 파일 업로드
+scp <local_file_path> <username>@<server_ip>:<remote_directory>
+-> scp C:\Users\USER\Downloads\client_secret_345903350793-t41b8ntq79r6vvpguov9secaesljf9s7.apps.googleusercontent.com.json user1@238.281.48.174:/home/something
